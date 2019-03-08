@@ -8,3 +8,10 @@ Right now it is fairly minimal and inflexible:
 * You must use the `pass(1)` password manager and have the api key in a very
   precise place.
 * There is only the handful of commands that I use
+
+## Install
+
+You can install the script via Homebrew:
+```
+$ brew install mayeu/mayeu/habitica-cli
+```
