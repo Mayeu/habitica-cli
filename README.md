@@ -1,7 +1,7 @@
 # Habitica CLI
 
-This is a **:warning: proof-of-concept :warning:** of a CLI for Habitica. There
-is thus an hight chance that it won't interest you at all.
+This is a **:warning: proof-of-concept :warning:** of a CLI for Habitica.
+Because of this, there is an hight chance that it won't interest you at all
 
 Right now it is fairly minimal and inflexible:
 * The is now way to change the UID of the targetted task dynamically
