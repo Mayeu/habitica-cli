@@ -49,6 +49,20 @@ then
         -H "x-api-key: ${API_KEY}"                                 \
         -d ""                                                      \
         "https://habitica.com/api/v3/tasks/${task_id}/score/up"
+elif test "$1" = "buy"
+then
+  if test "$2" = "armoire"
+  then
+    curl -X POST --compressed -H "${content_type_json}" \
+        -H "x-api-user:${API_USER}"                     \
+        -H "x-api-key: ${API_KEY}"                      \
+        -d ""                                           \
+        "https://habitica.com/api/v3/user/buy-armoire"
+
+  else
+    echo "I don't know how to buy that"
+    exit 1
+  fi
 
 else
   echo "Command unknown";
