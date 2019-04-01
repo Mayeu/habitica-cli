@@ -30,6 +30,13 @@ then
         -H "x-api-key: ${API_KEY}"                                 \
         -d '{"stats": {"int": 100, "str": 0, "con": 0, "per": 0}}' \
         https://habitica.com/api/v3/user/allocate-bulk
+  elif test $2 = "per";
+  then
+    curl -X POST --compressed -H "${content_type_json}"            \
+        -H "x-api-user:${API_USER}"                                \
+        -H "x-api-key: ${API_KEY}"                                 \
+        -d '{"stats": {"int": 0, "str": 0, "con": 0, "per": 100}}' \
+        https://habitica.com/api/v3/user/allocate-bulk
   else
     echo "Not supported"
   fi
