@@ -13,5 +13,5 @@ Right now it is fairly minimal and inflexible:
 
 You can install the script via Homebrew:
 ```
-$ brew install mayeu/mayeu/habitica-cli
+$ brew install mayeu/tap/habitica-cli
 ```
